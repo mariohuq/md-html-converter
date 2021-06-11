@@ -1,7 +1,6 @@
 {
   "name": "mariohuq/md-html-converter",
   "description": "PHP Inline Markdown ↔ HTML converter",
-  "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
     {
