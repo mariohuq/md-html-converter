@@ -10,5 +10,8 @@
   ],
   "require": {
     "wouterj/peg": "dev-master"
-  }
+  },
+  "autoload": {
+    "psr-4": { "Markdown\\": "src/" }
+  },
 }
