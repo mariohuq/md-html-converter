@@ -7,7 +7,7 @@ This converter based on [PHP PEG Parser](https://github.com/wouterj/peg) by wout
 Install `md-html-converter` using [Composer](https://getcomposer.org/download/):
 
 ```bash
-$ composer require mariohuq/md-html-converter:dev-master
+$ composer require mariohuq/md-html-converter:dev-main
 ```
 
 ## Usage
