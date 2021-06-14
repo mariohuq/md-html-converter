@@ -59,15 +59,15 @@ class MarkdownGrammar extends Grammar
             ]], function ($nested) {
                 return '<code>' . $nested[1] . '</code>';
             }),
-            //LINK <- LBRACK BLOCK LINK_SEP ANY RPAREN
+            //LINK <- LBRACK BLOCK+ LINK_SEP ANY RPAREN
             new Definition('LINK', ['sequence', [
                 ['identifier', 'LBRACK'],
-                ['identifier', 'BLOCK'],
+                ['repeat', ['identifier', 'BLOCK'], 1],
                 ['identifier', 'LINK_SEP'],
                 ['identifier', 'ANY'],
                 ['identifier', 'RPAREN'],
             ]], function ($nested) {
-                return '<a href="' . $nested[3] . '">' . $nested[1] . '</a>';
+                return '<a href="' . $nested[3] . '">' . join('', $nested[1]) . '</a>';
             }),
             //ASTERISK  <- '**'
             new Definition('ASTERISK', ['literal', '**']),

@@ -53,11 +53,14 @@ echo $grammar->parse('text1 **bold1 __italic1__** ~~`code1`~~');
 
 ## Try converter in action
 
-You can try this converter on test page, located at `/web/index.php`.
+You can try this converter on test page, located at [`/web/index.php`](web/index.php).
 
-Start local web server with root at this directory and port 8080 (or any other) and open <localhost:8080>.
+Start local web server with root at this directory and port 8080 (or any other) and
+open [localhost:8080](localhost:8080).
 
 ## Markdown syntax supported
+
+This converter supports Telegram's Markdown for users as such
 
 ```
 **bold**
@@ -80,7 +83,7 @@ BOLD            <- ASTERISK BLOCK_OR_LINK_S ASTERISK
 ITALICS         <- UNDERLINE BLOCK_OR_LINK_S UNDERLINE
 STRIKE          <- TILDA BLOCK_OR_LINK_S TILDA
 CODE            <- BACKTICK ANY BACKTICK
-LINK            <- LBRACK BLOCK LINK_SEP ANY RPAREN
+LINK            <- LBRACK BLOCK+ LINK_SEP ANY RPAREN
 
 ASTERISK  <- '**'
 UNDERLINE <- '__'
