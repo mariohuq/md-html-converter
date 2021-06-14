@@ -6,29 +6,6 @@ This converter based on [PHP PEG Parser](https://github.com/wouterj/peg) by wout
 
 Install `md-html-converter` using [Composer](https://getcomposer.org/download/):
 
-Firstly, add the repository to `composer.json`'s `repositories`:
-
-```json
-{
-  "repositories": [
-    {
-      "type": "package",
-      "package": {
-        "name": "mariohuq/md-html-converter",
-        "version": "dev-main",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/mariohuq/md-html-converter.git",
-          "reference": "main"
-        }
-      }
-    }
-  ]
-}
-```
-
-Then run
-
 ```bash
 $ composer require mariohuq/md-html-converter:dev-master
 ```

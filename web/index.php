@@ -1,6 +1,6 @@
 <?php
 
-require_once "../src/MarkdownGrammar.php";
+require __DIR__ . '/../vendor/autoload.php';
 
 use Mariohuq\MarkdownGrammar;
 
