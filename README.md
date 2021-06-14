@@ -15,15 +15,11 @@ Firstly, add the repository to `composer.json`'s `repositories`:
       "type": "package",
       "package": {
         "name": "mariohuq/md-html-converter",
-        "version": "dev-master",
+        "version": "dev-main",
         "source": {
-          "type" : "git",
-          "url" : "git://github.com/mariohuq/md-html-converter.git",
-          "reference" : "master"
-        },
-        "dist": {
-          "url": "https://github.com/mariohuq/md-html-converter/archive/master.zip",
-          "type": "zip"
+          "type": "git",
+          "url": "https://github.com/mariohuq/md-html-converter.git",
+          "reference": "main"
         }
       }
     }
